@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+    <title>Timer App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <div class="buttons" data-time="20">20 SECS</div>
+            <div class="buttons" data-time="300">QUICK 5</div>
+            <div class="buttons" data-time="900">WALK 15</div>
+            <div class="buttons" data-time="1200">SNACK 20</div>
+            <div class="buttons" data-time="3600">LUNCH 60</div>
+            <input placeholder="Time in Minutes" type="number" name="user-time" class="text-inp"> 
+            <button class="input-button" style="display: none;">Go</button>
+
+        </div>
+        
+        <div class="display">
+            <div class="time-format"> 
+                <h1 class="display__time-left">00:00:00</h1>
+                <span class="time-format-val">HH:MM:SS <button class="play-pause" style="margin-left: 10px;display: none;"></button></span>
+            </div>
+            <p class="display__end-time">Ending countdown at : 00:00:00</p>
+          </div>
+    </div>
+
+    <script src="./script.js">
+
+    </script>
+</body>
+</html>
